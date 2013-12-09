@@ -44,6 +44,6 @@ Also this type of writing is possible:
     .setConfig({IMGLINK : {IMGLINKID : 'myId',IMAGEURL : 'url_to_my_image',ALTTEXT : 'an image'}})
     .toHtml();`
 
-Produces:`
+Produces:
 
-`<a href="url_to_my_image" class="imagelink"><img scr="url_to_my_image" alt="an image"/></a>``
+``<a href="url_to_my_image" class="imagelink"><img scr="url_to_my_image" alt="an image"/></a>``
