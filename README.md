@@ -28,7 +28,7 @@ Produces:
 
 Create a custom template (partial):
 
-``var oTpl = new Template().extTpls({IMGLINK : '<a href="{IMAGEURL}" class="imagelink" id="{IMGLINK}"><img scr="{IMAGEURL}" alt="{ALTTEXT}"/></a>'});
+``var oTpl = new Template().extTpls({IMGLINK : "<a href=\"{IMAGEURL}\" class=\"imagelink\" id=\"{IMGLINK}\"><img scr=\"{IMAGEURL}\" alt=\"{ALTTEXT}\"/></a>"});
 
 oTpl.setConfig({
   IMGLINK : {
