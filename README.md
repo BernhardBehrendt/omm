@@ -22,10 +22,12 @@ It's also possible to extend the given configuration and/or override complete ta
    }
 }).toHtml()``
 
-**Produces:**
+Produces:
+
 `` <a href="#" class="a b c" id="myLink">My first link using this Templateengine</a>``
 
-CREATE A CUSTOM TEMPLATE (LINK WITH IMAGE) :
+Create a custom template (partial):
+
 ``var oTpl = new Template().extTpls({IMGLINK : '<a href="{IMAGEURL}" class="imagelink" id="{IMGLINK}"><img scr="{IMAGEURL}" alt="{ALTTEXT}"/></a>'});
 
 oTpl.setConfig({
