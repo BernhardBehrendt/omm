@@ -1,5 +1,5 @@
-#OMM - The Object Markup Mapper#
-##An oject to markup mapper to keep plain html out of your JavaScript code##
+#OMM - Object Markup Mapper#
+##An object to markup mapper to keep plain html out of your JavaScript code##
 
 ``Version 0.96``
 
