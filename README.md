@@ -25,26 +25,37 @@ new Omm({
 
 Produces:
 
-`` <a href="#" class="a b c" id="myLink">My first link using this OMM engine</a>``
+```html
+<a href="#" class="a b c" id="myLink">My first link using this OMM engine</a>
+```
 
 Create a custom template (partial):
 
-``var oTpl = new Omm().extTpls({IMGLINK : "<a href=\"{IMAGEURL}\" class=\"imagelink\" id=\"{IMGLINK}\"><img scr=\"{IMAGEURL}\" alt=\"{ALTTEXT}\"/></a>"});
+```js
+var oTpl = new Omm().extTpls({
+                       IMGLINK : '<a href="{IMAGEURL}" class="imagelink" id="{IMGLINK}"><img scr="{IMAGEURL}" alt="{ALTTEXT}"/></a>'
+                     });
+
 oTpl.setConfig({
   IMGLINK : {
       IMGLINKID : 'myId',
       IMAGEURL : 'url_to_my_image',
       ALTTEXT : 'an image'
   }
-}).toHtml();``
+}).toHtml();
+
+```
 
 Also this type of writing is possible:
 
-``new Omm()
-    .extTpls({IMGLINK : '<a href="{IMAGEURL}" class="imagelink" id="{IMGLINK}"><img scr="{IMAGEURL}" alt="{ALTTEXT}"/></a>'})
-    .setConfig({IMGLINK : {IMGLINKID : 'myId',IMAGEURL : 'url_to_my_image',ALTTEXT : 'an image'}})
-    .toHtml();`
+```js
+new Omm().extTpls({IMGLINK : '<a href="{IMAGEURL}" class="imagelink" id="{IMGLINK}"><img scr="{IMAGEURL}" alt="{ALTTEXT}"/></a>'})
+         .setConfig({IMGLINK : {IMGLINKID : 'myId',IMAGEURL : 'url_to_my_image',ALTTEXT : 'an image'}})
+         .toHtml();
+```
 
 Produces:
 
-`<a href="url_to_my_image" class="imagelink"><img scr="url_to_my_image" alt="an image"/></a>``
+```html
+<a href="url_to_my_image" class="imagelink"><img scr="url_to_my_image" alt="an image"/></a>
+```
