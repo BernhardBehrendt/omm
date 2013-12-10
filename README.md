@@ -5,30 +5,30 @@
 
 Licensed under the MIT license
 
-This class enables you to create Simple json objects and parse them to HTML MArkup at runtime.
+This class enables you to create Simple json objects and parse them to HTML Markup at runtime.
 The currently complete HTML tag reference including their complete attributes is build in this class.
-It's also possible to extend the given configuration and/or override complete tags with own templates (e.g. for custom attributes).
+It's also possible to extend the given configuration and/or override complete tags with own templates (e.g. for custom attributes or partials).
 
 **EXAMPLE:**
 
 **1) Create a link:**
 
-``new Template({
+``new Omm({
     A : {
       ID : 'myLink',
       CLASS : 'a b c',
       HREF : '#',
-      INSERT : 'My first link using this Templateengine'
+      INSERT : 'My first link using this OMM engine'
    }
 }).toHtml()``
 
 Produces:
 
-`` <a href="#" class="a b c" id="myLink">My first link using this Templateengine</a>``
+`` <a href="#" class="a b c" id="myLink">My first link using this OMM engine</a>``
 
 Create a custom template (partial):
 
-``var oTpl = new Template().extTpls({IMGLINK : "<a href=\"{IMAGEURL}\" class=\"imagelink\" id=\"{IMGLINK}\"><img scr=\"{IMAGEURL}\" alt=\"{ALTTEXT}\"/></a>"});
+``var oTpl = new Omm().extTpls({IMGLINK : "<a href=\"{IMAGEURL}\" class=\"imagelink\" id=\"{IMGLINK}\"><img scr=\"{IMAGEURL}\" alt=\"{ALTTEXT}\"/></a>"});
 oTpl.setConfig({
   IMGLINK : {
       IMGLINKID : 'myId',
@@ -39,7 +39,7 @@ oTpl.setConfig({
 
 Also this type of writing is possible:
 
-``new Template()
+``new Omm()
     .extTpls({IMGLINK : '<a href="{IMAGEURL}" class="imagelink" id="{IMGLINK}"><img scr="{IMAGEURL}" alt="{ALTTEXT}"/></a>'})
     .setConfig({IMGLINK : {IMGLINKID : 'myId',IMAGEURL : 'url_to_my_image',ALTTEXT : 'an image'}})
     .toHtml();`
