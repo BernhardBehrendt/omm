@@ -12,15 +12,16 @@ It's also possible to extend the given configuration and/or override complete ta
 **EXAMPLE:**
 
 **1) Create a link:**
-
-``new Omm({
+```js
+new Omm({
     A : {
       ID : 'myLink',
       CLASS : 'a b c',
       HREF : '#',
       INSERT : 'My first link using this OMM engine'
    }
-}).toHtml()``
+}).toHtml()
+```
 
 Produces:
 
