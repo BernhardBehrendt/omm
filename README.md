@@ -33,7 +33,7 @@ Create a custom template (partial):
 
 ```js
 var oTpl = new Omm().extTpls({
-                       IMGLINK : '<a href="{IMAGEURL}" class="imagelink" id="{IMGLINK}"><img scr="{IMAGEURL}" alt="{ALTTEXT}"/></a>'
+                       IMGLINK : '<a href="{IMAGEURL}" class="imagelink" id="{IMGLINKID}"><img scr="{IMAGEURL}" alt="{ALTTEXT}"/></a>'
                      });
 
 oTpl.setConfig({
