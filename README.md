@@ -1,6 +1,7 @@
 #OMM - Object Markup Mapper#
 ##An object to markup mapper to keep plain html out of your JavaScript code##
 
+[![Build Status](https://travis-ci.org/BernhardBezdek/omm.svg?branch=master)](https://travis-ci.org/BernhardBezdek/omm)
 [![Dependency Status](https://gemnasium.com/BernhardBezdek/omm.svg)](https://gemnasium.com/BernhardBezdek/omm)
 
 ``Version 0.9.0``
