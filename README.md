@@ -1,7 +1,7 @@
 #OMM - Object Markup Mapper#
 ##An object to markup mapper to keep plain html out of your JavaScript code##
 
-``Version 0.96``
+``Version 0.9.0``
 
 Licensed under the MIT license
 

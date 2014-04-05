@@ -1,0 +1,32 @@
+{
+    "name": "omm",
+    "description": "An oject to markup mapper to keep plain html out of your JavaScript code",
+    "version": "0.9.0",
+    "author": {
+        "name": "Bernhard Bezdek",
+        "email": "bernhard.bezdek@googlemail.com"
+    },
+    "license": "MIT",
+    "keywords": [
+        "html",
+        "mapper",
+        "abstraction",
+        "layer",
+        "object",
+        "colorful"
+
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/BernhardBezdek/omm.git"
+    },
+
+    "engines": {
+        "node": ">= 0.6.0"
+    },
+    "readmeFilename": "https://github.com/BernhardBezdek/omm/blob/master/README.md",
+    "bugs": {
+        "url": "https://github.com/BernhardBezdek/omm/issues"
+    },
+    "homepage": "https://github.com/BernhardBezdek/omm/"
+}
