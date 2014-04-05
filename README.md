@@ -9,6 +9,11 @@ This class enables you to create Simple json objects and parse them to HTML Mark
 The currently complete HTML tag reference including their complete attributes is build in this class.
 It's also possible to extend the given configuration and/or override complete tags with own templates (e.g. for custom attributes or partials).
 
+You can use omm in browser and on server using node.js's require
+
+    var Omm = require('omm');
+
+
 **EXAMPLE:**
 
 **1) Create a link:**

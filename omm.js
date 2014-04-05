@@ -1,6 +1,6 @@
 /*global log*/
 /*global alert*/
-var Omm;
+var Omm=null;
 (function () {
     "use strict";
     /**
@@ -370,3 +370,7 @@ var Omm;
         return {};
     };
 })();
+
+if(module!==undefined && module.exports !== undefined){
+    module.exports = Omm;
+}
