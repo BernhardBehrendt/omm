@@ -1,7 +1,7 @@
 {
     "name": "omm",
     "description": "An oject to markup mapper to keep plain html out of your JavaScript code",
-    "version": "0.9.1",
+    "version": "0.9.2",
     "author": {
         "name": "Bernhard Bezdek",
         "email": "bernhard.bezdek@googlemail.com"
